@@ -11,12 +11,15 @@ namespace MoodAnalyzerWithTestCase
     public class MoodAnalyzer
     {
         public string Message;
-        public string DisplayMoodAnalyzer(string message) //Creating a constructer 
+        public MoodAnalyzer(string message) //Creating a constructer 
         {
-            Message = message;
-            if (Message.ToLower().Contains("happy"))
+            this.Message = message;
+        }
+        public string AnalyseMethod()   //hear we check the mood of user is happy or sad
+        {
+            if (Message.ToLower().Contains("sad"))
             {
-                return "happy";
+                return "sad";
             }
             else
             {

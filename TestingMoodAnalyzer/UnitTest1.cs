@@ -12,11 +12,10 @@ namespace TestingMoodAnalyzer
         {
             ///Arrange
             string message = "I am in sad mood";
-            string expected = "happy";
-            MoodAnalyzer moodanalyzer = new MoodAnalyzer();//creating a object for a class
-            //moodanalyzer.DisplayMoodAnalyzer(message);
+            string expected = "sad";
+            MoodAnalyzer moodanalyzer = new MoodAnalyzer(message);//creating a object for a class
             ///Act
-            string actual = moodanalyzer.DisplayMoodAnalyzer(message);//hear we check the mood of user is happy or sad
+            string actual = moodanalyzer.AnalyseMethod();//hear we check the mood of user is happy or sad
             ///Assert
             Assert.AreEqual(expected, actual);
         }
