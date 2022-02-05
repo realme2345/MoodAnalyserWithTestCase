@@ -12,7 +12,7 @@ namespace TestingMoodAnalyzer
         {
             ///Arrange
             string message = "I am in sad mood";
-            string expected = "sad";
+            string expected = "happy";
             MoodAnalyzer moodanalyzer = new MoodAnalyzer();//creating a object for a class
             //moodanalyzer.DisplayMoodAnalyzer(message);
             ///Act

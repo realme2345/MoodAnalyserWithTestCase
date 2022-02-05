@@ -20,7 +20,7 @@ namespace MoodAnalyzerWithTestCase
             }
             else
             {
-                return "sad";
+                return "happy";
             }
         } 
     }
