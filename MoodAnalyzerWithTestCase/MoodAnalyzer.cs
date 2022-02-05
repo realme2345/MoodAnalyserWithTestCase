@@ -17,7 +17,7 @@ namespace MoodAnalyzerWithTestCase
         }
         public string AnalyseMethod()   //hear we check the mood of user is happy or sad
         {
-            if (Message.ToLower().Contains("sad"))
+            if (Message.ToLower().Contains("happy"))
             {
                 return "sad";
             }

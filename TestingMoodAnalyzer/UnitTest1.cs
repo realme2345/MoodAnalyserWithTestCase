@@ -11,7 +11,7 @@ namespace TestingMoodAnalyzer
         public void TestMethodMoodAnalyzer()
         {
             ///Arrange
-            string message = "I am in sad mood";
+            string message = "I am in happy mood";
             string expected = "sad";
             MoodAnalyzer moodanalyzer = new MoodAnalyzer(message);//creating a object for a class
             ///Act
